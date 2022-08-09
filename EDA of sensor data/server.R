@@ -2,7 +2,7 @@ shinyServer(function(input, output) {
     
     # pairs chart render
     output$pairs <- renderPlot({
-      ggpairs(data = ass1.data, 
+      ggpairs(data = pairs.data, 
               title = "Pairs of Variables Mapped by Operators",
               progress = FALSE,
               columns = input$pairs_varibles,
