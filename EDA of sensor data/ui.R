@@ -118,7 +118,7 @@ UI <- fluidPage(
                           sidebarPanel(
                             width = 20,
                             selectizeInput(inputId = "pairs_varibles", label = "Show variables",
-                                           choices = names(ass1.data), multiple = TRUE, 
+                                           choices = names(pairs.data), multiple = TRUE, 
                                            selected = list("Operator", "Priority", "sensor1", "sensor2")),
                           )
                         ),
