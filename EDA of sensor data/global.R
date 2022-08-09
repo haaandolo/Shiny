@@ -18,6 +18,8 @@ num2.ass1.data <- (ass1.data %>% select(!(ID:Surface)))
 cat.ass1.data <- (ass1.data %>% select(ID:Surface))[, c(-3, -1)]
 num.data.standardise <- scale(num.ass1.data, center=TRUE, scale=TRUE)
 cont.ass1.data <- (ass1.data %>% select(!(ID:Surface)))
+pairs.data <- ass1.data[, c(-2, -4)]
+
 
 # for missing values chart
 pMiss <- function(x){ sum(is.na(x))/length(x)*100 }
