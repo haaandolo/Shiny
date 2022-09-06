@@ -58,10 +58,3 @@ pMiss <- function(x){ sum(is.na(x))/length(x)*100 }
 # data for predicting missing values with r.part
 covid.data.rpart <- covid.data
 covid.data.rpart$missingness <- apply(X = is.na(covid.data.rpart), MARGIN = 1, FUN = sum)
-
-
-
-thing <- c(T, F, T)
-ok <- c(3, 4, 3)
-
-ok[thing]
